@@ -11,7 +11,7 @@ public:
 	int get() const;
 	void next();
 	void previous();
-	void equals(Iterator other);
+	bool equals(Iterator other);
 
 	friend class List;
 };

@@ -21,5 +21,29 @@ int main() {
 	iter = ageList.erase(iter);
 	ageList.displayList();
 
+	iter.previous();
+	iter.previous();
+	iter.previous();
+	ageList.insert(iter, 7);
+	ageList.displayList();
+
+	iter = ageList.begin();
+	iter.next();
+	ageList.insert(iter, -1);
+	ageList.displayList();
+
+	iter.previous();
+	
+	Iterator iter2 = ageList.begin();
+	iter2.next();
+	
+	if (iter.equals(iter2)) {
+		cout << endl;
+		cout << "They are equal!!\n";
+	}
+	else {
+		cout << "They are not equal!!\n";
+	}
+
 	return 0;
 }

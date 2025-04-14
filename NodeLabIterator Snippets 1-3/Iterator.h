@@ -15,4 +15,3 @@ public:
 
 	friend class List;
 };
-
